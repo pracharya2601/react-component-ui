@@ -1,0 +1,51 @@
+{
+  "name": "react-component-ui",
+  "version": "1.0.0",
+  "description": "better component ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "styleguidist server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pracharya2601/react-component-ui.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "react ui library",
+    "create react library from scratch",
+    "react ui component",
+    "component reusable",
+    "ui library"
+  ],
+  "peerDependencies": {
+    "@emotion/core": "10.x",
+    "@emotion/styled": "10.x",
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-styleguidist": "^11.0.8",
+    "webpack": "^4.44.0"
+  },
+  "author": "Prakash Acharya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pracharya2601/react-component-ui/issues"
+  },
+  "homepage": "https://github.com/pracharya2601/react-component-ui#readme",
+  "dependencies": {
+    "babel-plugin-module-resolver": "^4.0.0"
+  }
+}
