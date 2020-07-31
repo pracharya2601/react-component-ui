@@ -1,14 +1,7 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from 'react'
 
-import { font, primaryColors, shape } from 'config/styles';
-
-const Wrapper = styled.button`
-  ${font}
-  ${primaryColors}
-  ${shape}
-`;
-
-export default function Button({ text }) {
-  return <Wrapper>{text}</Wrapper>;
+const Button = ({ children }) => {
+  return <div>{children}</div>
 }
+
+export default Button
