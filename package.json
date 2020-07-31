@@ -1,23 +1,31 @@
 {
   "name": "cocoon-component-ui",
   "version": "1.0.0",
-  "description": "react component",
-  "main": "index.js",
+  "description": "react component ui library ",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "umd:main": "dist/index.umd.js",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "watch": "rollup -c --watch",
     "test": "run-s test:unit test:lint test:build",
     "test:lint": "eslint src/**/*.js",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/components/**/*.js",
     "test:build": "run-s build",
-    "lint:fix": "prettier-eslint --write $PWD/'**/*.js' && eslint --fix ."
+    "lint:fix": "prettier-eslint --write $PWD/'**/*.js' && eslint --fix .",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pracharya2601/react-component-ui.git"
+    "url": "https://github.com/pracharya2601/react-component-ui"
   },
   "keywords": [
-    "react_ui_component"
+    "react_ui_component",
+    "cocoon-component-ui",
+    "opensource-UI",
+    "react-ui opensource"
   ],
   "author": "Prakash Acharya",
   "license": "MIT",
@@ -79,5 +87,8 @@
     "prop-types": "^15.7.2",
     "styled-components": "^5.1.1"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/pracharya2601/react-component-ui#readme"
 }
