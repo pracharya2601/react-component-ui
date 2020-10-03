@@ -1,28 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import { StyledButton } from './Button.Style'
 
-const StyledButton = styled.button`
-  cursor: pointer;
-  background: #7a7aff;
-  color: white;
-  margin: 1em;
-  font-size: 1em;
-  padding: 0.25em 1em;
-  border-radius: 3px;
-  border: 1px solid #7a7aff;
-
-  &:hover {
-    background: #a2a2fc;
-    color: #383838;
-    border: 1px solid #7a7aff;
-  }
-`
-
-const Button = ({ icon, title, onClick }) => (
-  <StyledButton onClick={onClick}>{title}</StyledButton>
-)
-
+const Button = ({ icon, title, onClick, type, buttonSize, color, outline }) => {
+  return (
+    <StyledButton
+      onClick={onClick}
+      color={color}
+      outline={outline}
+      buttonSize={buttonSize}
+    >
+      hello
+    </StyledButton>
+  )
+}
 Button.propTypes = {
   title: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
